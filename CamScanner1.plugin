@@ -1,9 +1,0 @@
-#!name=CamScanner 解锁
-#!desc=扫描全能王解锁
-#!author=自用
-
-[Mitm]
-hostname = *.camscanner.com, *.intsig.net
-
-[Script]
-http-response ^https://.*.(intsig.net|camscanner.com) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/CamScanner.js, requires-body=true, timeout=10, tag=CamScanner
